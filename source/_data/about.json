@@ -1,0 +1,87 @@
+{
+    "avatar": "http://tp2.sinaimg.cn/1956184117/180/5674436546/1",
+    "name": "林寿山",
+	"tag": "游戏开发/Web前端",
+    "desc": "技术宅，闷骚男，热爱游戏开发和Web前端",
+    "skills": {
+        "Javascript": 8,
+		"Python": 6,
+		"C#": 6,
+		"HTML/CSS": 7,
+		"Lua": 2,
+		"Java/Android": 3,
+		"PHP": 3,
+		
+		"invisible-split-line-1": -1,
+		
+		"Unity3D": 3,
+		"Cocos2D-x": 4,
+		"Node.js": 4,
+		
+		"invisible-split-line-2": -1,
+		
+		"Fireworks": 6,
+		"Photoshop": 2
+    },
+    "projects": [{
+		"name": "hexo-theme-raytaylorism",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_hexo_raytaylorism.jpg",
+		"tags": ["2016年", "hexo主题", "Material Design"],
+		"description": "个人设计并开发的一款清新、响应式、个性化、Material Design风格的Hexo主题（也就是你们现在看到的我的博客的样子），支持最新的Hexo 3.1。",
+		"link_text": "Github地址",
+		"link": "https://github.com/raytaylorlin/hexo-theme-raytaylorism"
+	}, {
+		"name": "HUST Graduation Thesis",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_hustthesis.jpg",
+		"tags": ["2016年", "工具"],
+		"description": "个人开发的使用Pandoc Markdown和LaTeX写华中科技大学毕业论文（包括硕士论文和本科论文）的工具。",
+		"link_text": "Github地址",
+		"link": "https://github.com/raytaylorlin/hust-graduation-thesis-pandoc"
+	}, {
+		"name": "跳跳格鲁特",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fgroot.jpg",
+		"tags": ["2015年", "游戏", "Demo"],
+		"description": "在多益网络公司实习时带领6人团队（3程序3策划）研发的一款2D横版闯关小游戏。本人在项目担任主程序。参考游戏：Mr Jump",
+		"link_text": "录像演示（密码：prjb）",
+		"link": "http://pan.baidu.com/s/1kTq0l63"
+	}, {
+		"name": "Fantasy Adventure",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Ffantasy_adventure.jpg",
+		"tags": ["2015年", "游戏", "Demo"],
+		"description": "个人使用Unity3D制作的一款日系RPG游戏demo，实现了一个极具特色的半即时回合制战斗系统。参考游戏：格兰蒂亚2、空之轨迹系列",
+		"link_text": "录像演示（密码：fije）",
+		"link": "http://pan.baidu.com/s/1kTxlTT9"
+	}, {
+		"name": "Signichat",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_signichat.jpg",
+		"tags": ["2014年", "网站"],
+		"description": "Signichat是一款为科研人员打造的在线大图标注和实时讨论工具。本人在项目担任Web前端负责人。",
+		"link_text": "网站链接",
+		"link": "http://www.signichat.com"
+	}, {
+		"name": "青桔音乐",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_qingvoice.jpg",
+		"tags": ["2014年", "网站"],
+		"description": "青桔网是一个校园音乐娱乐平台，为全国高校“校园好声音”网络大赛提供选手和音乐展示服务。平台和大赛页面有近3亿网络传播，目前有约4万用户，历史单日PV峰值约10万。本人在项目担任Web前端负责人。",
+		"link_text": "网站链接",
+		"link": "http://www.qingvoice.com"
+	}, {
+		"name": "实验室Web前端培训体系",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_fe_train.jpg",
+		"tags": ["2014年", "培训体系"],
+		"description": "为了规范化实验室Web前端新人的培养流程，我建立了一个Github项目作为培训体系。自2014年已有10余位同学参加过培训并结业。",
+		"link_text": "Github地址",
+		"link": "https://github.com/ITEC-ELWG/FE-Study"
+	}, {
+		"name": "Reindy VS Santy",
+		"image": "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fp_snowballfight.jpg",
+		"tags": ["2012年", "游戏"],
+		"description": "个人制作的一款打雪仗小游戏，于2012年圣诞节推出并在华科举办了一个小型的竞分比赛，这也是个人第一款采用HTML5技术制作并公开的游戏作品。",
+		"link_text": "Github地址",
+		"link": "https://github.com/raytaylorlin/snowball-fight"
+	}],
+	"reward": [
+	    "http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fweixin_reward.png",
+		"http://raytaylorlin-blog.qiniudn.com/image%2Fabout%2Fzhifubao_reward.png"
+	]
+}

@@ -1,0 +1,15 @@
+{
+    "social": {
+        "weibo": "http://weibo.com/1956184117",
+        "github": "https://github.com/raytaylorlin",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+        "土土哥的技术博客": "http://tutuge.me/",
+        "屌刘neoye的博客": "http://neoyeelf.github.io/",
+		"李伟涛的博客": "http://diao.li/",
+        "苏塔是没有脚的设计师": "http://suta.im/",
+        "JFantasy的个人博客": "http://jfantasy.github.io/",
+        "丁基友的博客": "http://pyroc.at/"
+    }
+}
