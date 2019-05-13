@@ -148,6 +148,24 @@
             "review": "科普好书，强烈推荐",
             "score": 8,
             "doubanLink": "https://book.douban.com/subject/25985021/"
+        }, {
+            "title": "刻意练习：如何从新手到大师",
+            "cover": "https://img3.doubanio.com/view/subject/l/public/s29105145.jpg",
+            "review": "",
+            "score": 9,
+            "doubanLink": "https://book.douban.com/subject/26895993/"
+        }, {
+            "title": "上帝掷骰子吗？：量子物理史话",
+            "cover": "https://img3.doubanio.com/view/subject/l/public/s6475450.jpg",
+            "review": "",
+            "score": 8,
+            "doubanLink": "https://book.douban.com/subject/6434486/"
+        }, {
+            "title": "七堂极简物理课",
+            "cover": "https://img3.doubanio.com/view/subject/l/public/s28627105.jpg",
+            "review": "",
+            "score": 5,
+            "doubanLink": "https://book.douban.com/subject/26772731/"
         }],
 
 		"wish": [{
@@ -168,6 +186,12 @@
             "review": "",
             "score": null,
             "doubanLink": "http://book.douban.com/subject/25850090/"
+        }, {
+            "title": "编码：隐匿在计算机软硬件背后的语言",
+            "cover": "https://img3.doubanio.com/view/subject/l/public/s4379914.jpg",
+            "review": "",
+            "score": null,
+            "doubanLink": "https://book.douban.com/subject/4822685/"
         }]
     }
 }
