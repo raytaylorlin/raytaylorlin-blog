@@ -45,8 +45,8 @@ color:
   tab: green
   archive_item: grey
   fab: green
-  fab_2: green
-  fab_3: yellow darken-1
+  fab_2: pink
+  fab_3: orange darken-1
   new: green
   about_header: indigo
   about_title: indigo
