@@ -85,3 +85,9 @@ theme: raytaylorism
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Plugin: hexo-generator-search
+search:
+  path: search.xml
+  field: all
+  content: true
