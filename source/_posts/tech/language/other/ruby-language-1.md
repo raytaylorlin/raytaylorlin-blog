@@ -106,7 +106,7 @@ Ruby是一门纯面向对象语言，在Ruby中一切皆为对象，可以用“
 
 调用一个对象的`class`方法可以查看其类型，调用`superclass`可以查看这个类型的父类。下图展示了数字的继承链，其中横向箭头表示右边是左边实例化的对象，纵向箭头表示下边继承于上边。Ruby的一切事物都有一个共同的祖先Object。
 
-![Ruby数字的继承链](http://raytaylorlin-blog.qiniudn.com/image/Script/Ruby数字的继承链.png)
+![Ruby数字的继承链](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/Script/Ruby数字的继承链.png)
 
 最后通过一个完整的实例——定义一棵树，来看下Ruby的类如何定义和使用，该注意的点都写在注释里面了。
 

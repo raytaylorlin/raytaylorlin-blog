@@ -34,7 +34,7 @@ URL有两种方式：绝对的和相对的。像上面列举的都是绝对URL�
 
 相对URL到绝对URL的转换处理，首先是要找到基础URL，一般可以显示提供（比如HTML文档定义一个<base>标签显式指定基础URL），或者在封装资源中提供（比如HTML文档中的a标签链接，其基础URL就是这个HTML文档本身）。接着就是通过以下算法把相对URL转换成绝对URL。
 
-![相对URL转换成绝对URL算法流程图](http://raytaylorlin-blog.qiniudn.com/image/HTTP/%E7%9B%B8%E5%AF%B9URL%E8%BD%AC%E6%8D%A2%E6%88%90%E7%BB%9D%E5%AF%B9URL%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
+![相对URL转换成绝对URL算法流程图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/%E7%9B%B8%E5%AF%B9URL%E8%BD%AC%E6%8D%A2%E6%88%90%E7%BB%9D%E5%AF%B9URL%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
 
 # 3. URL字符与编码
 

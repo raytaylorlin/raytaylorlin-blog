@@ -49,7 +49,7 @@ Github上有许多开源项目，如果你想把别人的代码下载下来自�
 
 通常，集中式工作流程使用的都是单点协作模型（如下图所示）。一个存放代码仓库的中心服务器，可以接受所有开发者提交的代码。所有的开发者都是普通的节点，作为中心集线器的消费者，平时的工作就是和中心仓库同步数据。
 
-![Git集中式工作流示意图](http://raytaylorlin-blog.qiniudn.com/image/git/Git%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+![Git集中式工作流示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/git/Git%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 如果两个开发者从中心仓库克隆代码下来，同时作了一些修订，那么只有第一个开发者可以顺利地把数据推送到共享服务器。第二个开发者在提交他的修订之前，必须先下载合并服务器上的数据，解决冲突之后才能推送数据到共享服务器上。如果团队不是很大，或者大家都已经习惯了使用集中式工作流程，完全可以采用这种简单的模式。绝大多数人都熟悉和了解这种模式的工作方式，所以使用也非常广泛。
 
@@ -64,6 +64,6 @@ Github上有许多开源项目，如果你想把别人的代码下载下来自�
 5. 维护者在自己本地的（integration manger）仓库中，将贡献者的仓库加为远程仓库，合并更新并做测试。
 6. 维护者将合并后的更新推送到主仓库（blessed repository）。
 
-![Git集成管理员工作流示意图](http://raytaylorlin-blog.qiniudn.com/image/git/Git%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+![Git集成管理员工作流示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/git/Git%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 详情参照[Pro Git分布式工作流程](http://iissnan.com/progit/html/zh/ch5_1.html)

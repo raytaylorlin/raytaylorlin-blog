@@ -16,7 +16,7 @@ tags:
 
 下图为游戏运行时引擎架构的总览图，本图相对原书标上了序号，以方便下面各节阐述时对应其位置，并省略了一些细节的组成部分。**图片较大，建议在新标签页中打开图片查看。**
 
-![游戏运行时引擎架构](http://raytaylorlin-blog.qiniudn.com/image%2Fengine%2F%E6%B8%B8%E6%88%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84.png)
+![游戏运行时引擎架构](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E6%B8%B8%E6%88%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84.png)
 
 ## 1.1 硬件与操作系统
 

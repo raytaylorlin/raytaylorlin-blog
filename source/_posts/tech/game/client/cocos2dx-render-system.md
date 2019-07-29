@@ -24,7 +24,7 @@ Cocos2d-x 3.0新绘制系统分为三个阶段：生成绘制命令、对绘制�
 
 首先，通过UI树的遍历给每个元素生成一个RenderCommand（定义了怎样绘制一个UI元素），并将该命令添加到renderer的绘制栈中，如下图所示。接着引擎使用`globalZOrder`及元素的遍历顺序对绘制命令进行排序。最后执行绘制命令，对一般的RenderCommand，按顺序执行，对Sprite使用的QuadCommand，若两个命令相邻且使用相同的纹理、着色器等，则会组合成一个命令（即自动批处理）。
 
-![遍历UI树并将绘制命令发送到绘制栈](http://raytaylorlin-blog.qiniudn.com/image/game/遍历UI树并将绘制命令发送到绘制栈.png)
+![遍历UI树并将绘制命令发送到绘制栈](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/game/遍历UI树并将绘制命令发送到绘制栈.png)
 
 ## 2.1 RenderCommand概况
 

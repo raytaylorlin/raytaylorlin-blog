@@ -28,17 +28,17 @@ tags:
 * 使用接口：像C#或Java类只能继承一个类，但可以实现多个接口，这样共用的功能就能抽出来（也称为mix-in类）。如下图⑤，任何继承MHealth的类会有血量信息，并可以被杀
 * **冒泡效应**：当游戏加入越来越多的功能，程序员很容易不断把若干个类中**公用但与基类无关**的代码上升到基类中（即为了所谓的复用利用了继承的便利），这种趋势会令功能代码沿层次结构上移到基类（冒泡），从而违背类职责应该保持单一的原则
 
-![使用单一庞大的类层次结构的各种问题](http://raytaylorlin-blog.qiniudn.com/image/engine/%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%80%E5%BA%9E%E5%A4%A7%E7%9A%84%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E7%9A%84%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98.jpg)
+![使用单一庞大的类层次结构的各种问题](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%80%E5%BA%9E%E5%A4%A7%E7%9A%84%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E7%9A%84%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98.jpg)
 
 ### 1.1.2 使用“合成”来简化层次结构
 
 面向对象设计中过度使用“是一个（is-a）”关系，会限制了我们创造新游戏类型的设计选择，而且难以扩展现存类的功能。若像下图左边的继承结构，希望一个游戏对象类有碰撞功能，它必须要继承自CollidableObject ，即使它可能是隐形的而并不需要RenderableObject的功能。若把不同的功能分离为独立的“组件”类，它们互不相干，由一个轻量的GameObject采用“有一个（has-a）”关系持有并管理，如下图右边，则可以大大简化。Unity便是运用这种思想的例子。
 
-![使用组件合成游戏对象](http://raytaylorlin-blog.qiniudn.com/image/engine/%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6%E5%90%88%E6%88%90%E6%B8%B8%E6%88%8F%E5%AF%B9%E8%B1%A1.jpg)
+![使用组件合成游戏对象](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6%E5%90%88%E6%88%90%E6%B8%B8%E6%88%8F%E5%AF%B9%E8%B1%A1.jpg)
 
 对于GameObject管理其组件声明周期的具体实现，具体的做法是GameObject持有所有可能组件的指针并默认为空，而具体的游戏对象继承GameObject后，自行初始化所需的基本组件，并实现自己的特殊组件。但是当需要扩展新组件时，都要修改GameObject类，不符合开闭原则，因此更好的做法是以下这种GameObject持有Component列表的结构。
 
-![使用通用组件的设计](http://raytaylorlin-blog.qiniudn.com/image/engine/%E4%BD%BF%E7%94%A8%E9%80%9A%E7%94%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E8%AE%BE%E8%AE%A1.jpg)
+![使用通用组件的设计](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%BD%BF%E7%94%A8%E9%80%9A%E7%94%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E8%AE%BE%E8%AE%A1.jpg)
 
 ## 1.2 以属性为中心的架构
 
@@ -81,7 +81,7 @@ tags:
 
 句柄就是某全局句柄表的整数索引，而句柄表则储存指向引用对象的指针。下图说明了此数据结构。
 
-![句柄引用对象的实现方式及常见应用](http://raytaylorlin-blog.qiniudn.com/image/engine/%E5%8F%A5%E6%9F%84%E5%BC%95%E7%94%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8.jpg)
+![句柄引用对象的实现方式及常见应用](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E5%8F%A5%E6%9F%84%E5%BC%95%E7%94%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8.jpg)
 
 虽然句柄可以实现为原始整数，但句柄表的索引通常会包装成一个简单类，以提供更方便创建句柄和解引用的接口。以下是一种简单实现（省略其他与句柄无关的实现）。注意在。
 

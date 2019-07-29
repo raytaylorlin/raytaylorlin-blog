@@ -88,7 +88,7 @@
             "doubanLink": "http://book.douban.com/subject/20270192/"
         }, {
             "title": "RESTful Best Practices",
-            "cover": "http://raytaylorlin-blog.qiniudn.com/image/reading/RESTful_Best_Practices.png",
+            "cover": "http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/reading/RESTful_Best_Practices.png",
             "review": "人生第一本完整读完的英文书，纪念一下。注意这本书是电子版的，没有纸质版，下载地址在下面的（假）豆瓣链接。我看的是PDF只有40页，快的话其实一天就能看完。这本书主要讲RESTful API的一些设计原则和最佳实践，最大的优势就是没有牵扯太多的理论知识，但覆盖了几乎所有RESTful API最需要用到的点。本书以非常简洁的语言描述了概念（英文也不是很难懂），然后就讲一些实际会用到的例子。非常喜欢这种直截了当的行文，强烈推荐想要快速入门RESTful API设计并上手开发的人阅读本书。",
             "score": "8",
             "doubanLink": "http://www.restapitutorial.com/resources.html"

@@ -40,7 +40,7 @@ ST3打印代码的原理是将代码（含样式）先转换成HTMl，再从浏�
 - `Ctrl-Shift-P`，`Export To HTML: Show Export Menu`选择上面自定义的选项，这时会弹开浏览器的打印页，HTMl已经生成
 - 按下图设置打印选项，可以打印得更美观
 
-![Chrome浏览器打印设置](http://raytaylorlin-blog.qiniudn.com/image/IDE/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE.png)
+![Chrome浏览器打印设置](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/IDE/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE.png)
 
 ## 优化选项
 

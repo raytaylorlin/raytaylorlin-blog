@@ -1,23 +1,23 @@
 [{
-    "image": "http://7d9rl0.com1.z0.glb.clouddn.com/image/slider/weixin_public.jpg",
+    "image": "https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/slider/weixin_public.jpg",
     "align": "left",
     "title": "博客微信公众号",
     "subtitle": "扫一扫关注，获得最新博客动态",
 	"link": null
 }, {
-    "image": "http://raytaylorlin-blog.qiniudn.com/image%2Fslider%2Fabout.png",
+    "image": "http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fslider%2Fabout.png",
     "align": "right",
     "title": "新版“关于”页面",
     "subtitle": "了解我的技术之路",
 	"link": "/about"
 }, {
-    "image": "http://raytaylorlin-blog.qiniudn.com/image%2Fslider%2F2015summary_1.png",
+    "image": "http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fslider%2F2015summary_1.png",
     "align": "center",
     "title": "2015年秋季 学期总结",
     "subtitle": "",
 	"link": "/daily/2015-autumn-summary/"
 }, {
-    "image": "http://raytaylorlin-blog.qiniudn.com/image%2Fslider%2Fblogv3.png",
+    "image": "http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fslider%2Fblogv3.png",
     "align": "left",
     "title": "个人博客v3正式上线！",
     "subtitle": "清爽简约，新年再续高B格",

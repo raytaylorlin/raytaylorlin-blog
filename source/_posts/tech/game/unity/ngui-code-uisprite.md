@@ -23,7 +23,7 @@ UISprite是NGUI最基本的图片显示控件之一。它的基类UIBasicSprite�
 - `SimpleFill`：获取drawingDimensions，drawingUVs，drawingColor属性，直接填充4个顶点、uv和颜色
 - `SlicedFill`：九宫格填充，所以会绘制9个区域。核心填充方法见下图和代码。其中`mTempPos`为图中所标4个点，通过左下角、右上角点和border计算所得；`mTempUVs`为图中所标4个点的UV，通过outer和inner矩形及一个简单的工具方法`NGUIMath.ConvertToTexCoords`计算所得。
 
-![SlicedFill九宫格填充原理](http://raytaylorlin-blog.qiniudn.com/image/Unity/SlicedFill%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%A1%AB%E5%85%85%E5%8E%9F%E7%90%86.jpg)
+![SlicedFill九宫格填充原理](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/Unity/SlicedFill%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%A1%AB%E5%85%85%E5%8E%9F%E7%90%86.jpg)
 
     for (int x = 0; x < 3; ++x)
     {
@@ -52,7 +52,7 @@ UISprite是NGUI最基本的图片显示控件之一。它的基类UIBasicSprite�
 - `TiledFill`：平铺填充。通过两层while循环，使用inner矩形（即九宫格的中间区域）一行一行地平铺填充
 - `FilledFill`：主要由mfillDirection（填充方式）、mfillAmount（填充量，范围0-1代表0-90°）和mInvert（是否反转）来控制填充的效果，见下图示例。其中的计算涉及各种三角函数计算（`RadialCut`方法），不赘述。Radial 180需要分左右画2个矩形，而Radial 360则需要分四块画4个矩形。显然，Radial 360可以实现类似技能CD的效果。
 
-![各种FilledFill类型对比](http://raytaylorlin-blog.qiniudn.com/image/Unity/%E5%90%84%E7%A7%8DFilledFill%E7%B1%BB%E5%9E%8B%E5%AF%B9%E6%AF%94.jpg)
+![各种FilledFill类型对比](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/Unity/%E5%90%84%E7%A7%8DFilledFill%E7%B1%BB%E5%9E%8B%E5%AF%B9%E6%AF%94.jpg)
 
 - `AdvancedFill`：高级填充，可以对上下左右中分别单独设置
 

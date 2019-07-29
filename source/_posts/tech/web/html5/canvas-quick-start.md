@@ -47,7 +47,7 @@ tags:
 ## 2.1 坐标系统
 
 Canvas 2D渲染上下文采用平面笛卡尔坐标系统，左上角为原点(0,0)，坐标系统的1个单位相当于屏幕的1个像素。具体如下图：  
-![HTML5 Canvas坐标系统](http://raytaylorlin-blog.qiniudn.com/image/HTML5/HTML5%20Canvas%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.jpg)
+![HTML5 Canvas坐标系统](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTML5/HTML5%20Canvas%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.jpg)
 
 ## 2.2 绘制基本图形
 ### 2.2.1 矩形

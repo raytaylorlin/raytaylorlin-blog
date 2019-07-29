@@ -15,7 +15,7 @@ tags:
 
 # 1. 软件构建的主要活动
 
-![软件构建的主要活动（阴影覆盖的部分）](http://raytaylorlin-blog.qiniudn.com/image%2Fsoftware%2F%E8%BD%AF%E4%BB%B6%E6%9E%84%E5%BB%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%B4%BB%E5%8A%A8.png)
+![软件构建的主要活动（阴影覆盖的部分）](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E8%BD%AF%E4%BB%B6%E6%9E%84%E5%BB%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%B4%BB%E5%8A%A8.png)
 
 如图所示，软件构建活动主要是编码与调试，但也涉及详细设计、规划构建、单元测试、集成、集成测试等其他活动。下面列出一些具体的构建活动中的任务：
 

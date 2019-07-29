@@ -44,7 +44,7 @@ Node保持了JS在浏览器中单线程的特点。单线程的最大好处是�
 
 Node是跨平台的，即同样的一套JS代码都可以部署运行在Windows、Linux、OSX等平台。这主要得益于Node在操作系统与Node上层模块系统之间构建了一层平台层架构libuv。
 
-![Node实现跨平台的架构示意图](http://raytaylorlin-blog.qiniudn.com/image%2Fnodejs%2FNode%E5%AE%9E%E7%8E%B0%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9E%B6%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg)
+![Node实现跨平台的架构示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fnodejs%2FNode%E5%AE%9E%E7%8E%B0%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9E%B6%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg)
 
 # 2. 应用场景
 

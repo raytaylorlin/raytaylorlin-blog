@@ -20,7 +20,7 @@ TCP为HTTP提供了一条可靠的比特传输管道。从TCP连接一端流入�
 
 操作系统通常提供了一些用套接字操纵TCP连接的API，允许用户创建TCP的端点数据结构，与远程服务器的TCP端点进行连接，并对数据流进行读写。TCP API隐藏了所有底层网络协议细节。下图展示了客户端和服务器如何通过TCP套接字接口进行通信，至于套接字API编程则不再赘述。
 
-![TCP套接字接口通信过程](http://raytaylorlin-blog.qiniudn.com/image/HTTP/TCP%E5%A5%97%E6%8E%A5%E5%AD%97%E6%8E%A5%E5%8F%A3%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B.jpg)
+![TCP套接字接口通信过程](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/TCP%E5%A5%97%E6%8E%A5%E5%AD%97%E6%8E%A5%E5%8F%A3%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B.jpg)
 
 注：原书简要介绍了对TCP的性能的考虑，但TCP是个很复杂的话题，属于计算机网络的范畴，因此此处略过TCP性能考虑的详细介绍。最常见的TCP的相关时延包括：TCP连接建立握手、TCP慢启动拥塞控制、数据聚集的Nagle算法、用于捎带确认的TCP延迟确认算法、TIME_WAIT时延和端口耗尽。
 
@@ -55,7 +55,7 @@ Keep-Alive已经不再使用了，但是有一些浏览器和服务器对keep-al
 
 使用keep-alive连接有一些限制：`Connection: Keep-Alive`首部必须随所有希望保持持久连接的报文一起发送；实体的主体部分必须有正确的Content-Length，才能打开持久连接；代理和网管必须在将报文转发出去之前，删除在Connection首部及其中命名的所有首部字段（**Connection首部应该只对离开客户端的TCP链路产生影响**，但很多老的或简单的代理都是盲中继，即只将字节从一个连接转发到另一个连接而不对首部进行处理，*代理对keep-alive对话毫不知情，而客户端和服务器都认为它们在进行keep-alive对话*，这就会造成错误的通信方式，具体情况如下图所示）。为了避免此类代理通信问题的发生，现代的代理都决不能转发Connection首部和所有名字出现在Connection值中的首部。
 
-![Keep-Alive无法与不支持Connection首部的代理进行互操作](http://raytaylorlin-blog.qiniudn.com/image/HTTP/Keep-Alive%E6%97%A0%E6%B3%95%E4%B8%8E%E4%B8%8D%E6%94%AF%E6%8C%81Connection%E9%A6%96%E9%83%A8%E7%9A%84%E4%BB%A3%E7%90%86%E8%BF%9B%E8%A1%8C%E4%BA%92%E6%93%8D%E4%BD%9C.jpg)
+![Keep-Alive无法与不支持Connection首部的代理进行互操作](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/Keep-Alive%E6%97%A0%E6%B3%95%E4%B8%8E%E4%B8%8D%E6%94%AF%E6%8C%81Connection%E9%A6%96%E9%83%A8%E7%9A%84%E4%BB%A3%E7%90%86%E8%BF%9B%E8%A1%8C%E4%BA%92%E6%93%8D%E4%BD%9C.jpg)
 
 对于**单个盲中继**问题，Netscape的浏览器引入一个名为Proxy-Connection的新首部，即使盲中继代理转发这个首部，Web服务器也会将其狐狸。如果代理是“聪明”的，收到这个首部后就会发送自己的Connection: Keep-Alive来建立keep-alive连接。当然，这种做法只能解决只有一个代理的情况，如果客户端和服务器之间有多个代理，同样会有问题。透明的Web应用程序正确实现持久连接时非常重要的。
 
@@ -71,7 +71,7 @@ HTTP/1.1允许在持久连接上可选地使用**请求管道**，在响应到�
 
 下图是各种连接的时延对比。
 
-![三种连接形式的时延对比](http://raytaylorlin-blog.qiniudn.com/image/HTTP/%E4%B8%89%E7%A7%8D%E8%BF%9E%E6%8E%A5%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%97%B6%E5%BB%B6%E5%AF%B9%E6%AF%94.jpg)
+![三种连接形式的时延对比](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/%E4%B8%89%E7%A7%8D%E8%BF%9E%E6%8E%A5%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%97%B6%E5%BB%B6%E5%AF%B9%E6%AF%94.jpg)
 
 ## 2.5 关闭连接
 

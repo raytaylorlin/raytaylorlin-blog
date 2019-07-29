@@ -66,7 +66,7 @@ tags:
 
 通过下面的图例可以比较清晰地看到partition具体的重排过程。
 
-![快速排序一趟重排示例](http://raytaylorlin-blog.qiniudn.com/image/algorithm/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E4%B8%80%E8%B6%9F%E9%87%8D%E6%8E%92%E7%A4%BA%E4%BE%8B.jpg)
+![快速排序一趟重排示例](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E4%B8%80%E8%B6%9F%E9%87%8D%E6%8E%92%E7%A4%BA%E4%BE%8B.jpg)
 
 # 3. 性能分析
 
@@ -95,7 +95,7 @@ $$E[C] = 2\sum\limits\_{i = 1}^{n - 1} {\sum\limits\_{j = i + 1}^n { {1 \over {j
 
 （关于$\sum\limits_{k = 2}^n { {1 \over k}}  \le \ln n$见下图解释）
 
-![分数求和不等式图解](http://raytaylorlin-blog.qiniudn.com/image/algorithm/%E5%88%86%E6%95%B0%E6%B1%82%E5%92%8C%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%9B%BE%E8%A7%A3.jpg)
+![分数求和不等式图解](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E5%88%86%E6%95%B0%E6%B1%82%E5%92%8C%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%9B%BE%E8%A7%A3.jpg)
 
 $$\sum\limits\_{k = 2}^n { {1 \over k}}  \le \int\_1^n { {1 \over x}dx = \ln x|\_1^n = \ln n} $$
 

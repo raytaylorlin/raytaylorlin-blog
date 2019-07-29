@@ -19,7 +19,7 @@ tags:
 
 如果想提高前端性能，就必须理解浏览器的工作原理，哪怕是个大概，这样才能知道性能瓶颈在哪里以及如何优化。下图展示了Webkit浏览器从代码（HTML+CSS）到用户最终看到页面的处理过程。
 
-![Webkit浏览器解析代码和渲染的过程](http://raytaylorlin-blog.qiniudn.com/image/HTML5/Webkit浏览器解析代码和渲染的过程.png)
+![Webkit浏览器解析代码和渲染的过程](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTML5/Webkit浏览器解析代码和渲染的过程.png)
 
 为什么浏览器要在第一时间下载页面的HTML内容？首先HTML被解析成一棵*DOM树*，其次HTML包含了展示页面的其他所有资源文件（样式、脚本、图片）。然后DOM树和CSS样式表（包括自定义的和浏览器默认的）合起来构成*渲染树*，浏览器开始根据这棵渲染树“画”到屏幕上。
 
@@ -31,7 +31,7 @@ tags:
 
 浏览器渲染页面其实是在渲染一系列“盒子”，而且这些“盒子”都可以嵌套。在用CSS做布局的时候，应该注重语义化，把一组元素都包在一个盒子里，而不是把部分元素丢到盒子外面。如下图所示，要用CSS来实现这种简单的两列布局，较好的做法是给右栏设置一个`padding-left`，并把左栏图标绝对定位到`left:0`，这样就有了一个所有内容都包含在内部的盒子。错误的做法是给右栏设置`margin-left`，并把左栏图标绝对定位到`left: -50px`，这种做法把图标放到了盒子外，而且还定义了一个负坐标，这不仅不符合语义（把应该包含的元素放到了盒子外），出现负数这种不协调的代码感，而且这种布局还有可能在旧浏览器上出问题。
 
-![CSS布局示例](http://raytaylorlin-blog.qiniudn.com/image/HTML5/CSS布局示例.jpg)
+![CSS布局示例](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTML5/CSS布局示例.jpg)
 
 使用CSS写样式时，还应该多考虑模块化和可复用性。如果你写的代码是独立于内容的，它就是可复用的。另外从CSS类的命名上也经常可以看出问题，我的经验是尽量以元素的样式，而不是元素的功能去命名，例如给一个发送邮件按钮添加样式CSS类时，`.btn-confirm`就比`.btn-send-mail`好一些，前者可以复用到任何确认操作的按钮上（当然`.btn-send-mail`这个类也可以用于做js事件绑定用，只要它不绑定任何样式）。
 

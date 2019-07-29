@@ -28,7 +28,7 @@ Git的新建分支操作几乎可以在瞬间完成，并且在不同分支间�
 
 以上的功能分支、修补bug分支和预发布分支都属于临时性分支，一般使用完以后要删除掉这种分支，使得代码库的常设分支只有master和develop。最后以一张图总结一下常用的分支形式图。
 
-![Git分支管理示意图](http://raytaylorlin-blog.qiniudn.com/image/git/Git%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg)
+![Git分支管理示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/git/Git%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg)
 
 # 2. 分支与管理命令
 
@@ -87,7 +87,7 @@ Git还提供了一种合并功能，称为变基（rebase），它和上面提�
 
 拉取pull预设的行为是将远程的repo与本地的repo合并，如果本地的branch和远端的branch会同步得非常频繁（几乎是完全同步），这时候就会发现pull下来经常会冲突，然后用merge就会造成路线图变得很复杂，难以看到开发的主线，就像下图所示。这时候就会推荐使用`git pull --rebase`来进行变基拉取。
 
-![复杂的分支路线图](http://raytaylorlin-blog.qiniudn.com/image/git/%E5%A4%8D%E6%9D%82%E7%9A%84%E5%88%86%E6%94%AF%E8%B7%AF%E7%BA%BF%E5%9B%BE.jpg)
+![复杂的分支路线图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/git/%E5%A4%8D%E6%9D%82%E7%9A%84%E5%88%86%E6%94%AF%E8%B7%AF%E7%BA%BF%E5%9B%BE.jpg)
 
 在rebase的过程中，也许会出现冲突，Git会停止rebase并会让你去解决冲突。解决完冲突后，用`git-add`命令去更新这些内容的，只要执行以下语句（不需要提交commit）。
     

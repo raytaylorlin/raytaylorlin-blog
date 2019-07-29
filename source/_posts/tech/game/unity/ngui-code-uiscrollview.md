@@ -110,7 +110,7 @@ NGUI 3.7.x以上版本，有个新组件UIWrapContent，当列表内容很多时
 
 下图是以1-9个数字方格为例的UIWrapContent滚动原理
 
-![UIWrapContent向左滚动原理](http://raytaylorlin-blog.qiniudn.com/image/Unity/UIWrapContent%E5%90%91%E5%B7%A6%E6%BB%9A%E5%8A%A8%E5%8E%9F%E7%90%86.jpg)
+![UIWrapContent向左滚动原理](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/Unity/UIWrapContent%E5%90%91%E5%B7%A6%E6%BB%9A%E5%8A%A8%E5%8E%9F%E7%90%86.jpg)
 
 当滑动列表，每次有item跳转的时候，就会调用`onInitializeItem`回调（绑定你自定义的设置数据方法），此时就可以根据realIndex从你的数据列表中取得对应的数据，再将数据设置到go上（例如获取go的UILabel并设置其text等等）。
 

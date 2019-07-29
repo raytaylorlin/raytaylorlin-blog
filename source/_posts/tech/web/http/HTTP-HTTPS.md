@@ -18,7 +18,7 @@ HTTPS是最常见的HTTP安全版本。HTTPS将HTTP协议与一组强大的对�
 
 HTTPS是在安全的传输层上发送的HTTP，它在将HTTP报文发送给TCP之前，先将其发送给了一个安全层对其进行加密。现在，HTTP安全层是通过SSL及其代替协议TLS来实现的。下图给出了HTTP和HTTPS层次的对比。
 
-![HTTP与HTTPS层次对比](http://raytaylorlin-blog.qiniudn.com/image/HTTP/HTTP%E4%B8%8EHTTPS%E5%B1%82%E6%AC%A1%E5%AF%B9%E6%AF%94.jpg)
+![HTTP与HTTPS层次对比](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/HTTP%E4%B8%8EHTTPS%E5%B1%82%E6%AC%A1%E5%AF%B9%E6%AF%94.jpg)
 
 众所周知，在安全的HTTPS协议中，URL的方案前缀为https，如`https://github.com/`。HTTP的默认服务器端口号是80，而HTTPS的端口号是443。在未加密的HTTP中，客户端会打开一条到Web服务器80端口的TCP连接，发送一条请求报文，接收一条响应报文，最后关闭连接。而由于SSL安全层的存在，HTTPS中首先客户端打开一条到Web服务器端口443的连接。一旦建立TCP连接，就会初始化SSL层，对加密参数进行沟通，并交换密钥（这个过程成为SSL握手）。握手完成之后，SSL初始化就完成了，客户端就可以将请求报文进行加密然后发送给安全层。
 
@@ -31,11 +31,11 @@ HTTPS是在安全的传输层上发送的HTTP，它在将HTTP报文发送给TCP�
 * 对两端的身份进行认证
 * 生成临时的会话密钥，以便加密信道
 
-![SSL握手（简化版）流程](http://raytaylorlin-blog.qiniudn.com/image/HTTP/SSL%E6%8F%A1%E6%89%8B%EF%BC%88%E7%AE%80%E5%8C%96%E7%89%88%EF%BC%89%E6%B5%81%E7%A8%8B.jpg)
+![SSL握手（简化版）流程](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/SSL%E6%8F%A1%E6%89%8B%EF%BC%88%E7%AE%80%E5%8C%96%E7%89%88%EF%BC%89%E6%B5%81%E7%A8%8B.jpg)
 
 SSL支持双向认证，即证书可以在客户端和服务器之间互相传送。其中客户端并不经常使用证书，而HTTPS事务则总要求服务器提供证书。服务器证书是一个显示了组织的名称、地址、服务器DNS域名以及其他信息的X.509 v3派生证书（如下图所示）。客户端软件可以检查证书，以确保所有的信息都是可信的。
 
-![HTTPS证书示例](http://raytaylorlin-blog.qiniudn.com/image/HTTP/HTTPS%E8%AF%81%E4%B9%A6%E7%A4%BA%E4%BE%8B.jpg)
+![HTTPS证书示例](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/HTTPS%E8%AF%81%E4%B9%A6%E7%A4%BA%E4%BE%8B.jpg)
 
 大部分现代浏览器都会对证书进行简单的完整性检查，主要包含以下步骤：
 

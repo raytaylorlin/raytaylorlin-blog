@@ -142,7 +142,7 @@ Io在定义DSL方面的能力非常强大，据说用Io实现C语言的一个子
 
 下面的代码将构造一种新语法来对XML进行处理。这种新语法及对应的XML如图所示：
 
-![利用Io代码来表示XML](http://raytaylorlin-blog.qiniudn.com/image/Script/利用Io代码来表示XML.png)
+![利用Io代码来表示XML](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/Script/利用Io代码来表示XML.png)
 
     Builder := Object clone
     // 覆盖forward，使其可以接收任意方法

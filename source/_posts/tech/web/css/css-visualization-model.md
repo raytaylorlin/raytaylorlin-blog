@@ -18,7 +18,7 @@ tags:
 
 CSS盒模型指定元素如何显示以及在某种程度上如何相互交互。页面上的每个元素都被看做是一个矩形框，这个框由元素的内容、内边距、边框和外边距组成，如下图所示。如果使用Chrome的DevTools审查元素功能，鼠标指向页面随意一个元素，可以看到蓝色部分是内容，绿色部分是内边距，橙色部分是外边距。CSS中，width和height指的是内容区域的宽度和高度，增加padding、border、margin都不会影响内容区域的尺寸，但是**会增加元素框的总尺寸**。
 
-![CSS标准盒模型](http://raytaylorlin-blog.qiniudn.com/image/css/CSS%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B.jpg)
+![CSS标准盒模型](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/css/CSS%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B.jpg)
 
 * 内边距padding：如果在元素上添加背景（`background`属性），背景会应用于内容和内边距组成的区域。
 * 边框border：在内边距的区域外边加一条线，可以有实线、虚线、点线等。

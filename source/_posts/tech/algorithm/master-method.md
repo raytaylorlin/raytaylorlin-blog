@@ -31,7 +31,7 @@ $$T(n) = \begin{cases} O(n^d \log n) &amp; a = {b^d} \cr O(n^d) &amp; a < {b^d} 
 
 考虑下图中的递归树。
 
-![主定理证明递归树](http://raytaylorlin-blog.qiniudn.com/image/algorithm/%E4%B8%BB%E5%AE%9A%E7%90%86%E8%AF%81%E6%98%8E%E9%80%92%E5%BD%92%E6%A0%91.jpg)
+![主定理证明递归树](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E4%B8%BB%E5%AE%9A%E7%90%86%E8%AF%81%E6%98%8E%E9%80%92%E5%BD%92%E6%A0%91.jpg)
 
 1. 递归树的第j层（$j = 0,1, \cdots ,{ {\log }_b}n$），一共有${a^j}$个子问题，
 2. 每个子问题的规模是$n/{b^j}$。

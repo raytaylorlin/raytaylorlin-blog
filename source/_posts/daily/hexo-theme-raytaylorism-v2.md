@@ -18,7 +18,7 @@ tags:
 
 主色：blue 强调色：deep-orange
 
-![夏日甜橙](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fblue_deeporange.jpg)
+![夏日甜橙](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fblue_deeporange.jpg)
 
     color:
         header: indigo
@@ -41,7 +41,7 @@ tags:
 
 主色：green 强调色：red
 
-![绿野仙踪](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fgreen_red.jpg)
+![绿野仙踪](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fgreen_red.jpg)
 
     color:
         header: green
@@ -65,7 +65,7 @@ tags:
 
 主色：brown 强调色：light-green
 
-![林地木屋](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fbrown_lightgreen.jpg)
+![林地木屋](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fbrown_lightgreen.jpg)
 
     color:
         header: brown darken-1
@@ -89,7 +89,7 @@ tags:
 
 如果点击我的博客菜单中的“分类”按钮，会发现左侧侧滑栏会出来一个带有多个层级的文章分类列表。
 
-![主题的分类目录](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fraytaylorism-category.png)
+![主题的分类目录](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fraytaylorism-category.png)
 
 如果你也想要得到类似的效果（包括标签tag），需要按照[hexo官方的categories/tags说明文档](https://hexo.io/docs/front-matter.html#Categories-amp-Tags)给你的博客文章设置正确的`categories`和`tags`配置项。也就是说你的每一篇博文的markdown文件中，需要设置类似于下方的几行配置：
 
@@ -105,13 +105,13 @@ tags:
 
 # 3. 读书页面
 
-![读书页面截图](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fraytaylorism-reading.png)
+![读书页面截图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fraytaylorism-reading.png)
 
 在[README-数据-读书页面](https://github.com/raytaylorlin/hexo-theme-raytaylorism#数据)中其实已经说明了如何配置读书页面的数据，照着例子来改就行了。值得注意的是，“已读”“在读”“想读”这些标签的文字是可以通过`reading.json`中的`define`字段来修改的，甚至你还可以仿照读书页面，扩展出自己的专属页面，例如“作品”页面等。只要是满足这种列表条目的数据均可以在其上自由发挥。
 
 # 4. 关于页面
 
-![关于页面截图](http://raytaylorlin-blog.qiniudn.com/image%2Fdaily%2Fraytaylorism-about.png)
+![关于页面截图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fdaily%2Fraytaylorism-about.png)
 
 在[README-数据-关于页面](https://github.com/raytaylorlin/hexo-theme-raytaylorism#数据)中也说明了个`about.json`中各个字段的含义，照着例子改就行了。
 
