@@ -20,7 +20,7 @@ tags:
 
 低阶引擎系统都有极严竣的性能限制，**把多个游戏对象的同个子系统更新组合起来批次处理**，要比上述*多个游戏对象交错更新子系统*更高效，如下图所示。像渲染引擎就是使用批次式更新的典型例子。
 
-![交错式更新与批次式更新的区别](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%BA%A4%E9%94%99%E5%BC%8F%E6%9B%B4%E6%96%B0%E4%B8%8E%E6%89%B9%E6%AC%A1%E5%BC%8F%E6%9B%B4%E6%96%B0%E7%9A%84%E5%8C%BA%E5%88%AB.jpg)
+![交错式更新与批次式更新的区别](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%BA%A4%E9%94%99%E5%BC%8F%E6%9B%B4%E6%96%B0%E4%B8%8E%E6%89%B9%E6%AC%A1%E5%BC%8F%E6%9B%B4%E6%96%B0%E7%9A%84%E5%8C%BA%E5%88%AB.jpg)
 
 批次式更新带来很多性能效益，包括但不限于：
 * 最高的缓存一致性：子系统能把各对象的所需数据分配到一个连续的内存区里
@@ -40,7 +40,7 @@ tags:
 
 当存在对象间的依赖时，可能会抵触更新次序的规则，有时要轻微调整上述的批次式更新技巧。即不要一次性批处理所有游戏对象，而是把对象按依赖关系分为若干群组（或称为桶bucket），即没有任何依赖关系的对象（依赖树的根）放到第1个桶，依赖树第2层的所有对象放到第2个桶……然后按依赖次序更新每个桶，桶中使用批次式更新，如下图所示。游戏引擎可以明确为依赖树林的深度设限，这样就可以使用固定数目的桶以提高性能。
 
-![按对象的依赖性分桶更新](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E6%8C%89%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E5%88%86%E6%A1%B6%E6%9B%B4%E6%96%B0.jpg)
+![按对象的依赖性分桶更新](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E6%8C%89%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E5%88%86%E6%A1%B6%E6%9B%B4%E6%96%B0.jpg)
 
 # 2. 对象状态及“差一帧”延迟
 

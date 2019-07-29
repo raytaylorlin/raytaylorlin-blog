@@ -9,7 +9,7 @@ tags:
 ---
 《看门狗》系列游戏中，网络绕接（Network Bypass）是其中一种解谜小玩法，其目标是通过旋转一些通路节点来打通通路，最终解锁目标节点。下图展示了一个游戏中的示例，看一遍应该就能明白。
 
-<video src="http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E3%80%8A%E7%9C%8B%E9%97%A8%E7%8B%97%E3%80%8B%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%E7%A4%BA%E4%BE%8B.mp4" type="video/mp4" controls="controls" width="100%" height="100%"></video>
+<video src="https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E3%80%8A%E7%9C%8B%E9%97%A8%E7%8B%97%E3%80%8B%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%E7%A4%BA%E4%BE%8B.mp4" type="video/mp4" controls="controls" width="100%" height="100%"></video>
 
 鉴于这个玩法非常简单，闲暇时正好拿来作为练手项目。本文描述了该项目大致的设计思路。[Github项目地址](https://github.com/raytaylorlin/NetworkBypassPuzzle)
 
@@ -92,13 +92,13 @@ tags:
 
 要实现这个玩法规则本身并不是很难，但此外还有一个要重点考虑的是如何让策划高效地编辑和测试各种谜题。为此特意对各种节点类型定制了Inspector，如下图所示，其作用应该也是一目了然。
 
-![网络绕接玩法：节点定制的Inspector](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E8%8A%82%E7%82%B9%E5%AE%9A%E5%88%B6%E7%9A%84Inspector.jpg)
+![网络绕接玩法：节点定制的Inspector](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E8%8A%82%E7%82%B9%E5%AE%9A%E5%88%B6%E7%9A%84Inspector.jpg)
 
 下面的示意图演示了如何创建节点，摆放节点，以及给节点连线和设置参数。
 
-![网络绕接玩法：创建，摆放节点](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E5%88%9B%E5%BB%BA%EF%BC%8C%E6%91%86%E6%94%BE%E8%8A%82%E7%82%B9.gif)
+![网络绕接玩法：创建，摆放节点](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E5%88%9B%E5%BB%BA%EF%BC%8C%E6%91%86%E6%94%BE%E8%8A%82%E7%82%B9.gif)
 
-![网络绕接玩法：给节点连线和设置参数](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E7%BB%99%E8%8A%82%E7%82%B9%E8%BF%9E%E7%BA%BF%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0.gif)
+![网络绕接玩法：给节点连线和设置参数](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E7%BB%99%E8%8A%82%E7%82%B9%E8%BF%9E%E7%BA%BF%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0.gif)
 
 2.3 网络通路的噪声效果
 最开始的实现是直接用一个Line Renderer实现的。后来尝试做出原版游戏的那种噪声效果，在网上找了一个随机生成雪花点的Shader，并自己修改成一个Shader动画，其Pass代码如下：
@@ -135,8 +135,8 @@ tags:
 
 最终效果如下：
 
-![噪声Shader动画](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E5%99%AA%E5%A3%B0Shader%E5%8A%A8%E7%94%BB.gif)
+![噪声Shader动画](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E5%99%AA%E5%A3%B0Shader%E5%8A%A8%E7%94%BB.gif)
 
 最后放一个比较复杂的且支持3D的案例演示：
 
-<video src="http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E5%A4%8D%E6%9D%82%E7%9A%843D%E7%A4%BA%E4%BE%8B.mp4" type="video/mp4" controls="controls" width="100%" height="100%"></video>
+<video src="https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/project/%E7%BD%91%E7%BB%9C%E7%BB%95%E6%8E%A5%E7%8E%A9%E6%B3%95%EF%BC%9A%E5%A4%8D%E6%9D%82%E7%9A%843D%E7%A4%BA%E4%BE%8B.mp4" type="video/mp4" controls="controls" width="100%" height="100%"></video>

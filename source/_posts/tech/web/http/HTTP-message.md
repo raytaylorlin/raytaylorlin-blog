@@ -19,7 +19,7 @@ HTTP报文是在HTTP应用程序之间发送的数据块，这些数据块以文
 
 报文由起始行、首部，以及可选的包含数据的主体三个部分组成。所有的HTTP报文分为两类：请求（request）报文和响应（response）报文，如下图示例。前者会向Web服务器请求对资源进行一些操作，后者承载了状态信息和操作产生的所有结果数据，把结果返回给客户端。
 
-![请求和响应报文示例](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/%E8%AF%B7%E6%B1%82%E5%92%8C%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87%E7%A4%BA%E4%BE%8B.jpg)
+![请求和响应报文示例](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/%E8%AF%B7%E6%B1%82%E5%92%8C%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87%E7%A4%BA%E4%BE%8B.jpg)
 
 ## 2.1 起始行
 

@@ -36,7 +36,7 @@ IntelliJ IDEA是一个非常强大的IDE，但是只有英文版，且默认的�
 如果发现安装了这个字体但是在设置中找不到的话，尝试使用以下这个方法：  
 按图所示，保存为另外一个名字，由你喜欢。最好是英文字母组成，这里我们保存为Darcula1。
 
-![Intellij IDEA 12 设置字体](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/IDE/Intellij%20IDEA%2012%20%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93.jpg)  
+![Intellij IDEA 12 设置字体](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/IDE/Intellij%20IDEA%2012%20%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93.jpg)  
 
 在此路径（win7）“C:\Users\你的计算机名\\.IntelliJIdea12\config\colors”找到Darcula1.xml文件。  
 用记事本打开Darcula1.xml文件，把第8行  
@@ -49,5 +49,5 @@ IntelliJ IDEA是一个非常强大的IDE，但是只有英文版，且默认的�
 
 然后重启IntelliJ IDEA 12.0，中文字符问题解决，效果如下图。
 
-![Intellij IDEA 12中文字符显示效果](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/IDE/Intellij%20IDEA%2012%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C.jpg)
+![Intellij IDEA 12中文字符显示效果](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/IDE/Intellij%20IDEA%2012%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C.jpg)
 

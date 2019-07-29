@@ -55,7 +55,7 @@ tags:
 
 由上述定义可见，其实三种符号的定义非常相像，其中$\Theta $记号渐近地给出一个函数的上界和下界，而大O记号给出的是上界，$\Omega $记号给出的是下界。因此接下来的讨论均以“较为严格”的$\Theta $记号为例。下图给出这三种记号的一个直观表示。
 
-![三种渐近记号的区别](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E4%B8%89%E7%A7%8D%E6%B8%90%E8%BF%91%E8%AE%B0%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB.jpg)
+![三种渐近记号的区别](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E4%B8%89%E7%A7%8D%E6%B8%90%E8%BF%91%E8%AE%B0%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB.jpg)
 
 注意，由于$\Theta (f(n))$是一个集合，所以$T(n) = \Theta (f(n))$其实等价于$T(n) \in \Theta (f(n))$。$\Theta $记号的一种非形式化的概念，相当于扔掉低阶项并忽略最高阶项前的系数。
 

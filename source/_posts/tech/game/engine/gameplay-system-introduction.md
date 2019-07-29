@@ -39,7 +39,7 @@ tags:
     * 选取多个对象后的编辑方式：此高级特性把选中的对象的共有属性混合在一起显示。在网格中编辑公共值时，会把新值更新至所有选取对象的属性中。
     * 自由格式属性：通常这种属性集会关联到某个用户自定义的对象，以形成新的“自由格式”属性，如光源属性集包含位置、方向、颜色、强度及光源类型属性。
 
-![属性网格示例](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E5%B1%9E%E6%80%A7%E7%BD%91%E6%A0%BC%E7%A4%BA%E4%BE%8B.jpg)
+![属性网格示例](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E5%B1%9E%E6%80%A7%E7%BD%91%E6%A0%BC%E7%A4%BA%E4%BE%8B.jpg)
 
 * 安放对象及对齐辅助工具：除了基本的平移、旋转、缩放工具外，有的编辑器还提供对齐至网格，对齐至地形，对齐至对象，多个对象分布或对齐等功能。
 * 特殊对象类型

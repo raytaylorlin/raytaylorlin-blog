@@ -18,7 +18,7 @@ tags:
 
 状态在游戏里面非常常见。想象一个横版过关游戏的主角有如下图状态转换。
 
-![一个简单的游戏角色状态例子](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E7%8A%B6%E6%80%81%E4%BE%8B%E5%AD%90.jpg)
+![一个简单的游戏角色状态例子](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E7%8A%B6%E6%80%81%E4%BE%8B%E5%AD%90.jpg)
 
 FSM有以下特性：
 

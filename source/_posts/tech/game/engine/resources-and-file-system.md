@@ -123,7 +123,7 @@ OGRE使用ZIP存档资源，因为ZIP是开放格式，内部虚拟文件有相�
 
 某资源的载入时期通常在玩家第一次看见该资源便能决定，但何时卸下资源归还内存，就难以回答，因为可能存在多个关卡共享的资源。解决方案之一就是对资源引用计数，即载入新关卡时，遍历所需资源并引用加1，再遍历即将结束的关卡的资源，所有引用减1。下图给出了资源引用计数的例子。
 
-![载入或卸下两个关卡时资源的引用变化](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E8%BD%BD%E5%85%A5%E6%88%96%E5%8D%B8%E4%B8%8B%E4%B8%A4%E4%B8%AA%E5%85%B3%E5%8D%A1%E6%97%B6%E8%B5%84%E6%BA%90%E7%9A%84%E5%BC%95%E7%94%A8%E5%8F%98%E5%8C%96.jpg)
+![载入或卸下两个关卡时资源的引用变化](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E8%BD%BD%E5%85%A5%E6%88%96%E5%8D%B8%E4%B8%8B%E4%B8%A4%E4%B8%AA%E5%85%B3%E5%8D%A1%E6%97%B6%E8%B5%84%E6%BA%90%E7%9A%84%E5%BC%95%E7%94%A8%E5%8F%98%E5%8C%96.jpg)
 
 ### 2.2.5 资源的内存管理
 
@@ -138,7 +138,7 @@ OGRE使用ZIP存档资源，因为ZIP是开放格式，内部虚拟文件有相�
 
 资源的交叉引用意味着资源间的依赖性，所以资源数据库可以表达为依赖对象所组成的有向图。交叉引用可以分为内部（单个文件里对象间的引用）和外部（引用另一个文件的对象）。下图给出了资源数据库的交叉引用例子。
 
-![资源数据库的交叉引用例子](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E8%B5%84%E6%BA%90%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BA%A4%E5%8F%89%E5%BC%95%E7%94%A8%E4%BE%8B%E5%AD%90.png)
+![资源数据库的交叉引用例子](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E8%B5%84%E6%BA%90%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BA%A4%E5%8F%89%E5%BC%95%E7%94%A8%E4%BE%8B%E5%AD%90.png)
 
 #### 2.2.6.1 处理资源内部引用
 
@@ -146,7 +146,7 @@ OGRE使用ZIP存档资源，因为ZIP是开放格式，内部虚拟文件有相�
 
 储存对象到二进制文件的另一常用方法是，把指针转换为为文件偏移值，并建立指针修正表。下图给出了储存二进制文件以及将文件载入内存的指针修正示意，具体过程为：①把每个对象的内存影响遍历一次，顺序写至文件成为连续映像；②写进文件的代码，清楚知道对象的数据类型和类，也就知道每个对象的指针在哪里，把这些指针位置储存到指针修正表并一同写进文件；③载入文件至内存时，映像内对象仍保持连续，并凭借修正表修正所有指针。
 
-![储存二进制文件以及将文件载入内存的指针修正示意](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E5%82%A8%E5%AD%98%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%B0%86%E6%96%87%E4%BB%B6%E8%BD%BD%E5%85%A5%E5%86%85%E5%AD%98%E7%9A%84%E6%8C%87%E9%92%88%E4%BF%AE%E6%AD%A3%E7%A4%BA%E6%84%8F.jpg)
+![储存二进制文件以及将文件载入内存的指针修正示意](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fengine%2F%E5%82%A8%E5%AD%98%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%B0%86%E6%96%87%E4%BB%B6%E8%BD%BD%E5%85%A5%E5%86%85%E5%AD%98%E7%9A%84%E6%8C%87%E9%92%88%E4%BF%AE%E6%AD%A3%E7%A4%BA%E6%84%8F.jpg)
 
 从文件载入C++对象，必须调用对象的构造函数。这个问题有两个常见解决方案：使用纯C结构体来储存数据或使用无虚函数、只含不做事情的平凡构造函数的C++ struct/class；表里记录对象属于哪个类，并使用[placement new](https://en.wikipedia.org/wiki/Placement_syntax)语法调用构造函数，像下面的代码所示。
 

@@ -48,7 +48,7 @@ UICamera是NGUI中专门用于捕获和分发交互事件的脚本，和UI渲染
 
 下图为UICamera脚本的配置。
 
-![UICamera脚本的配置](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/unity/UICamera%E8%84%9A%E6%9C%AC%E7%9A%84%E9%85%8D%E7%BD%AE.jpg)
+![UICamera脚本的配置](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/unity/UICamera%E8%84%9A%E6%9C%AC%E7%9A%84%E9%85%8D%E7%BD%AE.jpg)
 
 # 2. 核心方法
 

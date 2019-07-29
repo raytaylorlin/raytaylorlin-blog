@@ -58,7 +58,7 @@ Node的执行模型实际上是**事件循环**。在进程启动时，Node会�
 
 回调通知是异步I/O的第二阶段。线程池中的I/O操作调用完毕后，会将获取的结果储存起来，然后通知IOCP当前对象操作已完成，并将线程归还线程池。在每次Tick的执行中，事件循环的I/O观察者会调用相关的方法检查线程池中是否有执行完的请求，如果存在，会将请求对象加入到I/O观察者的队列中，然后将其当做事件处理。
 
-![Node异步I/O流程](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fnodejs%2FNode%E5%BC%82%E6%AD%A5IO%E6%B5%81%E7%A8%8B.jpg)
+![Node异步I/O流程](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fnodejs%2FNode%E5%BC%82%E6%AD%A5IO%E6%B5%81%E7%A8%8B.jpg)
 
 # 3. 非IO的异步API
 

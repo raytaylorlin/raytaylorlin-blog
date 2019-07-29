@@ -15,7 +15,7 @@ tags:
 
 ## 1.1 网络游戏对应的OSI模型
 
-![网络游戏对应的OSI模型](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/server/网络游戏对应的OSI模型.png)
+![网络游戏对应的OSI模型](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/server/网络游戏对应的OSI模型.png)
 
 一般来说，第4层以下的分层，交由操作系统来处理即可。第4层大多使用TCP，只有在有必要的情况下才使用UDP（例如**发送那些与可靠性相比到达速度更为重要的数据**（如FPS游戏），实现NAT遍历功能等等）。由于游戏类型和策划内容千差万别无法统一，第5层及以上的功能需要网游开发人员自己实现。
 
@@ -71,7 +71,7 @@ tags:
 
 RPC的基本原理是在本地模拟远程主机的函数调用，主要通过将数据流进行编码后发送出去，远程主机接收数据并解码，然后调用相应的函数。下图展示了网游中RPC的基本模式。注意到调用侧应用程序调用了`attackAtEnemy`函数，该函数定义在源文件“RPC存根代码”中，存根代码是用工具自动生成的，不需要手工编写。其中“123”固定值表示要调用`attackAtEnemy`这个函数，“99”表示要攻击id为99的敌人。
 
-![网络游戏中使用的RPC模式](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/server/网络游戏中使用的RPC模式.jpg)
+![网络游戏中使用的RPC模式](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/server/网络游戏中使用的RPC模式.jpg)
 
 RPC存根代码文件中调用方和被调用方的函数参数列表必须完全一致，如果有大量函数，应该采用RPC工具来自动生成。通常使用Ruby或Python等很容易进行DSL（领域特定语言）定义的语言来设计[IDL（接口描述语言）](https://zh.wikipedia.org/wiki/%E6%8E%A5%E5%8F%A3%E6%8F%8F%E8%BF%B0%E8%AF%AD%E8%A8%80)，然后执行脚本生成存根函数的源代码和头文件。
 

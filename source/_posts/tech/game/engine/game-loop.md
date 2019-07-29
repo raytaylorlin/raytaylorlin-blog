@@ -70,7 +70,7 @@ OGRE引擎提供一套框架，程序员需要从`Ogre::FrameListener`派生一�
 
 上述讨论了基本的单线程游戏循环，而随着并行编程的架构和技术的发展，游戏引擎也需要最大化多核硬件的使用率。Xbox 360和PlayStation 3都是多处理器游戏机，为了有意义地讨论并行软件架构，需要先简单了解它们的内核架构。
 
-![Xbox 360和PlayStation 3的内核架构](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/Xbox%20360%E5%92%8CPlayStation3%E7%9A%84%E5%86%85%E6%A0%B8%E6%9E%B6%E6%9E%84.jpg)
+![Xbox 360和PlayStation 3的内核架构](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/Xbox%20360%E5%92%8CPlayStation3%E7%9A%84%E5%86%85%E6%A0%B8%E6%9E%B6%E6%9E%84.jpg)
 
 多数现代CPU都会提供单指令多数据（SIMD）指令集，其可以让一个运算同时执行于多个数据之上，此乃一种细粒度形式的硬件并行。游戏中最常用的是并行操作4个32位浮点数，可以让三维矢量和矩阵运算加速至4倍。实际使用SIMD指令时，一般要采用封装良好的三维数学库中的函数来计算。
 
@@ -86,7 +86,7 @@ OGRE引擎提供一套框架，程序员需要从`Ogre::FrameListener`派生一�
 
 使用多线程的问题之一就是，每个线程都代表相对较粗粒度的工作量（例如把所有动画任务都置于一个线程，把所有物理任务置于另一线程），这会限制多个处理器的利用率。若某个子系统线程未完成其工作，就可能阻塞主线程和其他线程。为充分利用并行硬件架构，另一种方法是把工作分割成多个细小、比较独立的作业（一组数据与操作代码结合成对），作业准备就绪就加入队列，待有闲置的处理器，作业才会从队列取出执行。PS3的SPURS库的作业模型就实现这种方法，其6个SPU只要有闲置就投入处理细粒度的作业。这样有助于最大化处理器的利用率，也可减少对主线程的限制，自然地对任何数量的处理单元进行扩展或缩减。
 
-![子系统独立线程与PS3的作业模型](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8B%AC%E7%AB%8B%E7%BA%BF%E7%A8%8B%E4%B8%8EPS3%E7%9A%84%E4%BD%9C%E4%B8%9A%E6%A8%A1%E5%9E%8B.jpg)
+![子系统独立线程与PS3的作业模型](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/engine/%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8B%AC%E7%AB%8B%E7%BA%BF%E7%A8%8B%E4%B8%8EPS3%E7%9A%84%E4%BD%9C%E4%B8%9A%E6%A8%A1%E5%9E%8B.jpg)
 
 # 3. 网络多人游戏循环
 

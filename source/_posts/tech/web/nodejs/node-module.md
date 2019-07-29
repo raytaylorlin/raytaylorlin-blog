@@ -69,7 +69,7 @@ CommonJS的模块规范分为3个部分：
 
 有必要明确一下Node中各种模块的调用关系，如下图所示：
 
-![Node模块间调用关系](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fnodejs%2FNode%E6%A8%A1%E5%9D%97%E9%97%B4%E8%B0%83%E7%94%A8%E5%85%B3%E7%B3%BB.jpg)
+![Node模块间调用关系](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fnodejs%2FNode%E6%A8%A1%E5%9D%97%E9%97%B4%E8%B0%83%E7%94%A8%E5%85%B3%E7%B3%BB.jpg)
 
 C/C++内建模块是最底层的模块，属于核心模块，主要提供API给Javascript核心模块和第三方Javascript文件模块调用，实际中几乎不会接触到此类模块。Javascript核心模块主要职责有两种：一种是作为C/C++内建模块的封装层和桥接层供文件模块调用，另一种是纯粹的功能模块，不需要跟底层打交道。文件模块通常由第三方编写，包括普通Javascript模块和C/C++扩展模块。
 

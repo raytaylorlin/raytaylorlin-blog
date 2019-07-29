@@ -43,7 +43,7 @@ HTTP没有为用户提供一种手段来区分响应是否来自缓存。可以�
 
 Web缓存的基本处理步骤包括7个步骤，如下图所示。
 
-![Web缓存的基本处理步骤](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/Web%E7%BC%93%E5%AD%98%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%A4%84%E7%90%86%E6%AD%A5%E9%AA%A4.jpg)
+![Web缓存的基本处理步骤](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/HTTP/Web%E7%BC%93%E5%AD%98%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%A4%84%E7%90%86%E6%AD%A5%E9%AA%A4.jpg)
 
 1. 接收：缓存检测到一条网络连接上的活动，读取输入数据。高性能的缓存会同时从多条输入连接上读取数据，在整条报文抵达之前开始处理事务。
 2. 解析：将请求报文解析为片段，将首部各个部分放入易于操作的数据结构中。

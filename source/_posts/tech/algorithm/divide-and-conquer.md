@@ -40,7 +40,7 @@ tags:
 
 归并排序的算法思想，看看下面的图解示例就明白了。
 
-![归并排序图解](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%9B%BE%E8%A7%A3.png)
+![归并排序图解](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%9B%BE%E8%A7%A3.png)
 
 算法的主要过程代码如下所示：
 

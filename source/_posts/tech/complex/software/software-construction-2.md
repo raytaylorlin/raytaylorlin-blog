@@ -72,7 +72,7 @@ tags:
 
 ## 2.4 设计的层次
 
-![一个软件系统的设计层次](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%B1%82%E6%AC%A1.png)
+![一个软件系统的设计层次](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%B1%82%E6%AC%A1.png)
 
 # 3. 软件构建中设计的方法
 

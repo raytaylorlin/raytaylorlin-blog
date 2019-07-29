@@ -17,7 +17,7 @@ tags:
 
 堆是一棵**完全二叉树**，实际中可以通过一个数组来实现，它最重要的一个性质是：**任意节点都小于（大于）等于其子节点**。将根节点最小的堆称为最小堆，根节点最大的堆称为最大堆。下图给出了一个最大堆的示例及其数组表示，可以直观地看出每个节点都比它的孩子们都要大。
 
-![最大堆示例及其数组表示](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E6%9C%80%E5%A4%A7%E5%A0%86%E7%A4%BA%E4%BE%8B%E5%8F%8A%E5%85%B6%E6%95%B0%E7%BB%84%E8%A1%A8%E7%A4%BA.jpg)
+![最大堆示例及其数组表示](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image/algorithm/%E6%9C%80%E5%A4%A7%E5%A0%86%E7%A4%BA%E4%BE%8B%E5%8F%8A%E5%85%B6%E6%95%B0%E7%BB%84%E8%A1%A8%E7%A4%BA.jpg)
 
 在上图中可以看到，完全二叉树的节点可以从根节点编号为1开始按顺序排列，对应数组A中的索引（注意此处下标是从1开始的）。给定一个节点`i`，我们很容易可以得到它的左孩子是`2i`，右孩子是`2i+1`，父节点是`i/2`
 

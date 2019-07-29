@@ -47,7 +47,7 @@ tags:
     * 缺点：棘手的系统接口的演练必须留到最后才进行，有问题的底层可能会反过来影响顶层
     * 纯粹的自顶向下集成几乎是不可能的，大多时候使用混合方法集成，或用下图的在各个竖直划分的功能块中自顶向下集成
 
-![在各个竖直划分的功能块中自顶向下集成](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E5%9C%A8%E5%90%84%E4%B8%AA%E7%AB%96%E7%9B%B4%E5%88%92%E5%88%86%E7%9A%84%E5%8A%9F%E8%83%BD%E5%9D%97%E4%B8%AD%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E9%9B%86%E6%88%90.png)
+![在各个竖直划分的功能块中自顶向下集成](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E5%9C%A8%E5%90%84%E4%B8%AA%E7%AB%96%E7%9B%B4%E5%88%92%E5%88%86%E7%9A%84%E5%8A%9F%E8%83%BD%E5%9D%97%E4%B8%AD%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E9%9B%86%E6%88%90.png)
 
 * 自底向上集成
     * 首先要完成整个系统的设计，然后一个一个添加底层类向上层集成，最初需要编写驱动测试类
@@ -62,12 +62,12 @@ tags:
 * 功能导向的集成
     * 首先需要搭建好骨架，然后按照功能（模块）划分顺序来集成，如下图所示
 
-![功能导向的集成示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E5%8A%9F%E8%83%BD%E5%AF%BC%E5%90%91%E7%9A%84%E9%9B%86%E6%88%90%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+![功能导向的集成示意图](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2F%E5%8A%9F%E8%83%BD%E5%AF%BC%E5%90%91%E7%9A%84%E9%9B%86%E6%88%90%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 * T型集成
     * 先选中某个特定的“竖直块”及早开发并集成，这个功能块应该能从头到尾演练系统，并找出系统设计的全部主要问题。纠正所有问题后，就可以开始开发系统其它核心部件，如下图所示。这种方法常与风险导向和功能导向集成集合使用
 
-![T型集成示意图](http://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2FT%E5%9E%8B%E9%9B%86%E6%88%90%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+![T型集成示意图](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fsoftware%2FT%E5%9E%8B%E9%9B%86%E6%88%90%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 集成顺序的策略有多种多样的形状和规模，没有哪一种对所有情况而言都是最佳的。**最佳集成步骤随项目不同而变化，最佳解决方案总是为了满足特定项目的特定需求而制定的，不要像教条一样遵循前面提到的任何过程。**
 
